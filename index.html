@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            margin: 20px 0;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .answer {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⭐ Покупка звезд</h1>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Как происходит покупка звезд?</div>
+            <div class="answer">Мы не входим в ваш аккаунт Telegram, все покупки звезд происходят конфиденциально. После покупки, оператор отправит вам ссылку активацию, которую необходимо будет открыть. После открытия ссылки вы получите свои звезды и они будут начислены на ваш баланс спустя несколько секунд.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Как долго происходит покупка?</div>
+            <div class="answer">Сама покупка звезд будет быстрой, вы оплатите товар и перейдете в список ожидания. Спустя некоторое время вы получите ссылку активацию, чаще всего это занимает не больше 1 часа если операторы свободны. Минимальное время ожидания - 1 минута, максимальное время ожидания - 24 часа.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Что можно делать со звездами?</div>
+            <div class="answer">Звезды можно тратить на подарки вашим друзьям и близким, либо вы можете реагировать на посты в каналах при помощи звезд - это помогает владельцу канала монетизировать свои посты.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">За это могут заблокировать?</div>
+            <div class="answer">Ни в коем случае. Звезды покупаются через официальных партнеров Telegram, которые гарантируют 100% безопасность вашего аккаунта и ваших звезд.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            answerElement.style.display = answerElement.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
